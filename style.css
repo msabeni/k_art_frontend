@@ -3,17 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 p {
   color: #555;
+}
+.header {
+  background: radial-gradient(#fff, #fc6a03);
 }
 
 /* ------navbar ----- */
 .container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .navbar {
   display: flex; /*dont know */
   align-items: center;
@@ -34,4 +40,41 @@ nav ul li {
 a {
   text-decoration: none;
   color: #555;
+}
+
+/* ------ first section ----- */
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 70px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #563434;
+}
+.header .row {
+  margin-top: 70px;
 }
