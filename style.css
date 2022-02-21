@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  color: #555;
+}
+
+/* ------navbar ----- */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+.navbar {
+  display: flex; /*dont know */
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1; /*dont know */
+  text-align: right;
+}
+nav ul {
+  display: inline-block; /*dont know */
+  list-style: none; /* removes the bullet points */
+}
+nav ul li {
+  display: inline-block; /*makes them lie horizontal next to each other" */
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
