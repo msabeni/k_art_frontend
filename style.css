@@ -114,4 +114,13 @@ a {
   line-height: 60px;
   color: #555;
 }
-
+.title::after {
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /*it will be on center from x-axis */g
+}
