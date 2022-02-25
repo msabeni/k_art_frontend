@@ -21,16 +21,16 @@ p {
   padding-right: 25px;
 }
 .navbar {
-  display: flex; /*dont know */
+  display: flex; /*d k */
   align-items: center;
   padding: 20px;
 }
 nav {
-  flex: 1; /*dont know */
+  flex: 1; /*d k */
   text-align: right;
 }
 nav ul {
-  display: inline-block; /*dont know */
+  display: inline-block; /*d k*/
   list-style: none; /* removes the bullet points */
 }
 nav ul li {
@@ -77,4 +77,33 @@ a {
 }
 .header .row {
   margin-top: 70px;
+}
+
+/* ------ featured categories ----- */
+.categories {
+  margin: 70px 0; /* space on top and bottom */
+}
+.col-3 {
+  flex-basis: 30%; /* all the 3 columns will occupy 30% space */
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* ------ featured products ----- */
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.col-4 img {
+  width: 100%;
 }
