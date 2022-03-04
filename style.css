@@ -273,6 +273,16 @@ ul {
   nav ul {
     margin-left: 400px;
   }
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 
 /* ------===== all products page ===== ----- */
@@ -283,4 +293,16 @@ ul {
 select {
   border: 1px solid #ff523b;
   padding: 5px;
+}
+
+/* ------=====single product details page ===== ----- */
+.single-product .col-2 {
+  padding: 30px;
+}
+.single-product .col-2 img {
+  padding: 0;
+}
+.single-product h4 {
+  font-size: 22px;
+  font-weight: bold;
 }
