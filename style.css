@@ -238,7 +238,7 @@ ul {
     position: absolute;
     top: 70px;
     left: 0;
-    background: #ffdb58;
+    background: radial-gradient(#fff, #fc6a03);
     width: 25%;
     margin-top: 80px;
     margin-left: 485px;
@@ -273,4 +273,14 @@ ul {
   nav ul {
     margin-left: 400px;
   }
+}
+
+/* ------===== all products page ===== ----- */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select {
+  border: 1px solid #ff523b;
+  padding: 5px;
 }
