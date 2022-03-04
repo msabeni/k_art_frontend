@@ -41,6 +41,10 @@ a {
   text-decoration: none;
   color: #555;
 }
+.menu-icon {
+  margin-left: 20px;
+  display: none;
+}
 
 /* ------ first section ----- */
 .row {
@@ -226,4 +230,47 @@ ul {
 }
 .copyright {
   text-align: center;
+}
+
+/* ------ media query for menu ----- */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #ffdb58;
+    width: 25%;
+    margin-top: 80px;
+    margin-left: 485px;
+    padding-left: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* ------ media query for less than 600 screen size ----- */
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4,
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3 {
+    flex-basis: 100%;
+  }
+  nav ul {
+    margin-left: 400px;
+  }
 }
