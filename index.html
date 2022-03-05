@@ -86,10 +86,29 @@
       <div class="small-container">
         <div class="row">
           <div class="col-3">
-            <img src="images/category-1.jpeg" alt="" />
+            <img
+              src="images/category-1.jpeg"
+              alt=""
+              width="200px"
+              height="400px"
+            />
           </div>
-          <div class="col-3"><img src="images/category-2.jpeg" alt="" /></div>
-          <div class="col-3"><img src="images/category-3.jpeg" alt="" /></div>
+          <div class="col-3">
+            <img
+              src="images/category-2.jpeg"
+              alt=""
+              width="200px"
+              height="400px"
+            />
+          </div>
+          <div class="col-3">
+            <img
+              src="images/category-3.jpeg"
+              alt=""
+              width="200px"
+              height="400px"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +118,7 @@
       <h2 class="title">Featured products</h2>
       <div class="row">
         <div class="col-4">
-          <img src="images/product-1.jpeg" alt="" />
+          <img src="images/product-1.jpeg" alt="" height="300px" />
           <h4>Abstract guitar</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
@@ -111,7 +130,7 @@
           <p>$50.00</p>
         </div>
         <div class="col-4">
-          <img src="images/product-2.jpeg" alt="" />
+          <img src="images/product-2.jpeg" alt="" height="300px" />
           <h4>Abstract guitar</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
@@ -123,7 +142,7 @@
           <p>$50.00</p>
         </div>
         <div class="col-4">
-          <img src="images/product-3.jpeg" alt="" />
+          <img src="images/product-3.jpeg" alt="" height="300px" />
           <h4>Abstract guitar</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
@@ -135,7 +154,7 @@
           <p>$50.00</p>
         </div>
         <div class="col-4">
-          <img src="images/product-4.jpeg" alt="" />
+          <img src="images/product-4.jpeg" alt="" height="300px" />
           <h4>Abstract guitar</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
@@ -259,12 +278,10 @@
 
       MenuItems.style.maxHeight = "0px";
 
-      function menutoggle(){
-        if(MenuItems.style.maxHeight == "0px"){
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
           MenuItems.style.maxHeight = "200px";
-        }
-        else 
-        {
+        } else {
           MenuItems.style.maxHeight = "0px";
         }
       }
