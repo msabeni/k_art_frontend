@@ -1,3 +1,43 @@
+<?php
+
+include('connect.php');
+
+  try{
+    
+      if(isset($_POST['sign_up'])){
+
+        if(empty($_POST['username'])){
+           throw new Exception("Username cann't be empty.");
+        }
+
+        if(empty($_POST['email'])){
+          throw new Exception("Email cann't be empty.");
+        }
+
+        if(empty($_POST['password'])){
+           throw new Exception("Password cann't be empty.");
+        }
+        
+        if(empty($_POST['confirm_password'])){
+           throw new Exception("Password confirmation cann't be empty.");
+        }
+
+        if(strcmp($_POST['password'],$_POST['confirm_password']) == 0){
+          $result = $conn->query("insert into userinfo(username,email,password) values('$_POST[uname]','$_POST[email]','$_POST[password]')");
+          $success_msg="Signup Successfull!, you can proceed to login";
+        }else{
+          throw new Exception("Password Mismatch");
+          }
+  
+  }
+}
+  catch(Exception $e){
+    $error_msg =$e->getMessage();
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,6 +118,12 @@
             <div class="sign_up" id="sign_up-form">
               <h3>User Login</h3>
 
+              <?php
+              if(isset($success_msg)) echo $success_msg;
+              if(isset($error_msg)) echo $error_msg;
+              ?>
+
+              <form method="post" action="sign_up.php">
               <fieldset>
                   <input
                     type="text"
@@ -86,6 +132,16 @@
                     placeholder="username"
                     required
                     autocomplete="off"
+                    name="username"
+                  />
+                  <input
+                    type="text"
+                    autofocus
+                    id="em"
+                    placeholder="Email"
+                    required
+                    autocomplete="off"
+                    name="email"
                   />
                   <input
                     type="password"
@@ -93,6 +149,7 @@
                     placeholder="Password"
                     required
                     autocomplete="off"
+                    name="password"
                   /><input
                   type="text"
                   autofocus
@@ -100,10 +157,13 @@
                   placeholder="confirm password"
                   required
                   autocomplete="off"
+                  name="confirm_password"
                 />
-                  <input type="submit" name="log" value="sign up" />
+                  <input type="submit" name="sign_up" value="sign up" />
                 </form>
               </fieldset>
+              </form>
+
             </div>
             <p class=""> already have an account? <a href="login.html">Login Here </a> . </p>
             <!-- end sign_up-form -->
