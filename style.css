@@ -361,3 +361,8 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
+
+/* ------===== login page ===== ----- */
+.header .first-section {
+  padding-bottom: 80px;
+}
