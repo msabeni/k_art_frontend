@@ -23,8 +23,9 @@ include('connect.php');
         }
 
         if(strcmp($_POST['password'],$_POST['confirm_password']) == 0){
-          $result = $conn->query("insert into userinfo(username,email,password) values('$_POST[uname]','$_POST[email]','$_POST[password]')");
-          $success_msg="Signup Successfull!, you can proceed to login";
+          $result = $conn->query("insert into userinfo(username,email,password) values('$_POST[username]','$_POST[email]','$_POST[password]')");
+          $success_msg="Signup Successfull!";
+          header('location: login.php');
         }else{
           throw new Exception("Password Mismatch");
           }
