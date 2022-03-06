@@ -1,3 +1,42 @@
+<?php
+
+include('connect.php');
+
+  try{
+    
+      if(isset($_POST['login'])){
+
+        if(empty($_POST['username'])){
+           throw new Exception("Username can't be empty.");
+        }
+
+        if(empty($_POST['password'])){
+           throw new Exception("Password cann't be empty.");
+        }
+
+        $row=0;
+        $result=$conn->query("select * from userinfo where username='$_POST[username]' and password='$_POST[password]'");
+
+        $row=mysqli_num_rows($result);
+
+		if( $row>0 ){
+			session_start();
+			$_SESSION['name']="k_art";
+      $success_msg="Login Successfull!n";
+      header('location: cart.html');
+		}else{
+      throw new Exception("Incorrect Username or Password");
+			}
+
+  
+  }
+}
+  catch(Exception $e){
+    $error_msg =$e->getMessage();
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,6 +118,12 @@
             <div id="login-form">
               <h3>User Login</h3>
 
+              <?php
+              if(isset($success_msg)) echo $success_msg;
+              if(isset($error_msg)) echo $error_msg;
+              ?>
+
+              <form method="POST" action="login.php">
               <fieldset>
                 <form id="form-login">
                   <input
@@ -88,6 +133,7 @@
                     placeholder="Username"
                     required
                     autocomplete="off"
+                    name="username"
                   />
 
                   <input
@@ -96,11 +142,14 @@
                     placeholder="Password"
                     required
                     autocomplete="off"
+                    name="password"
                   />
 
-                  <input type="submit" name="log" value="Login" />
+                  <input type="submit" name="login" value="Login" />
                 </form>
               </fieldset>
+                </form>
+
             </div>
             <p class="">
               dont have an account? <a href="sign_up.html">sign up Here </a> .
