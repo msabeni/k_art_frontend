@@ -78,7 +78,7 @@ include('connect.php');
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-              <li><a href="login.html">Account</a></li>
+              <li><a href="login.php">Account</a></li>
             </ul>
           </nav>
           <a href="cart.html"
@@ -152,7 +152,7 @@ include('connect.php');
 
             </div>
             <p class="">
-              dont have an account? <a href="sign_up.html">sign up Here </a> .
+              dont have an account? <a href="sign_up.php">sign up Here </a> .
             </p>
           </div>
           <!-- end login-form -->

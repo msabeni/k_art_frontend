@@ -80,7 +80,7 @@ include('connect.php');
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
+              <li><a href="login.php">Account</a></li>
             </ul>
           </nav>
           <a href="cart.html"
@@ -166,7 +166,7 @@ include('connect.php');
               </form>
 
             </div>
-            <p class=""> already have an account? <a href="login.html">Login Here </a> . </p>
+            <p class=""> already have an account? <a href="login.php">Login Here </a> . </p>
             <!-- end sign_up-form -->
           </div>
         </div>
