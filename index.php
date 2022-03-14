@@ -1,3 +1,6 @@
+<?php
+require_once 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,11 +38,10 @@
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="products.html">Products</a></li>
               <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="login.html">Account</a></li>
+              <li><a href="account.php">Account</a></li>
             </ul>
           </nav>
           <a href="cart.html">
@@ -70,9 +72,10 @@
               Buy my art !
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              My name is Kimberly Msabeni. I am an artist as well as a web
+              developer.
               <br />
-              aliquam natus suscipit assumenda atque voluptatem !
+              K_ART is where art and technology meet !
             </p>
             <a href="#featured-products" class="btn">Explore Now &#8594;</a>
           </div>
@@ -134,7 +137,7 @@
         </div>
         <div class="col-4">
           <img src="images/product-2.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
+          <h4>Face Art</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -146,7 +149,7 @@
         </div>
         <div class="col-4">
           <img src="images/product-3.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
+          <h4>stripped colored zebra</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -158,7 +161,7 @@
         </div>
         <div class="col-4">
           <img src="images/product-4.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
+          <h4>Elephant and calf</h4>
           <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -209,7 +212,7 @@
               <i class="fa fa-star-o"></i>
             </div>
             <img src="images/user-1.jpeg" alt="user-1" />
-            <h3>kemi msabeni</h3>
+            <h3>Jabali Molabo</h3>
           </div>
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
@@ -227,7 +230,7 @@
               <i class="fa fa-star-o"></i>
             </div>
             <img src="images/user-1.jpeg" alt="user-1" />
-            <h3>kemi msabeni</h3>
+            <h3>Judy msabeni</h3>
           </div>
         </div>
       </div>
@@ -238,11 +241,11 @@
       <div class="container">
         <div class="row">
           <div class="footer-col-1">
-            <h3>dont know yet</h3>
+            <h3>contact me</h3>
             <div class="feather-logo">
               <img src="images/feather-logo_ccexpress.png" alt="" />
             </div>
-            <p>some text, some text, some text adipisicing.</p>
+            <p>+254748626940</p>
           </div>
           <div class="footer-col-2">
             <img src="images/art_logo2_ccexpress.png" alt="logo" />
