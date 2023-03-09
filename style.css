@@ -326,6 +326,10 @@ select {
   font-size: 22px;
   font-weight: bold;
 }
+.single-product .fa {
+  color: #ff523b;
+  margin-left: 10px;
+}
 
 /* ------===== cart items page ===== ----- */
 .cart-page {
