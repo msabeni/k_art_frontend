@@ -61,85 +61,36 @@
       <!-- ==== End navbar ==== -->
     </div>
 
-    <!-- ==== single product details ==== -->
-    <div class="small-container single-product">
-      <div class="row">
-        <div class="col-2">
-          <img src="images/product-1.jpeg" alt="" width="50%" height="300px" />
-        </div>
-        <div class="col-2">
-          <p>Home / Abstract guitar</p>
-          <h1>Abstract guitar by msabeni</h1>
-          <h4>$50.00</h4>
-          <a href="" class="btn">Add to cart</a>
-          <h3>product details <i class="fa fa-indent"></i> </h3>
-          <br />
-          <p>
-            details details details details details details details details
-            details details
-          </p>
-        </div>
-      </div>
-    </div>
+    <!--==== Account Page Start ====-->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/account-hero.png" alt="hero" width="100%">
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()"">Register</span>
+                <hr id="Indicator">
+              </div>
 
-    <!-- ==== title ==== -->
-    <div class="small-container">
-      <div class="row row-2">
-        <h2>Related products</h2>
-        <p>view more</p>
-      </div>
-    </div>
-
-    <!-- ==== related products ==== -->
-    <div class="small-container">
-      <div class="row">
-        <div class="col-4">
-          <img src="images/product-1.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
+              <form id="LoginForm">
+                <input type="text" placeholder="Username">
+                <input type="password" name="" id="" placeholder="password">
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot password</a>
+              </form>
+              <form id="RegForm">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" name="" id="" placeholder="password">
+                <button type="submit" class="btn">Register</button>
+                
+              </form>
+            </div>
           </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-2.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-3.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="images/product-4.jpeg" alt="" height="300px" />
-          <h4>Abstract guitar</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
         </div>
       </div>
     </div>
@@ -198,6 +149,24 @@
         } else {
           MenuItems.style.maxHeight = "0px";
         }
+      }
+    </script>
+
+    <!-- ==== js for toggle form ==== -->
+    <script>
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("Indicator");
+
+      function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+      function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
       }
     </script>
   </body>
