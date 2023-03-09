@@ -64,6 +64,9 @@ a {
   font-size: 50px;
   line-height: 60px;
 }
+.col-2 p {
+  margin-top: 10px;
+}
 .btn {
   display: inline-block;
   background: #ff523b;
@@ -270,6 +273,10 @@ ul {
   }
   nav ul {
     margin-left: 400px;
+  }
+  .col-2 h1 {
+    font-size: 40px;
+    line-height: 50px;
   }
   .single-product .row {
     text-align: left;
