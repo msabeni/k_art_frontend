@@ -277,6 +277,9 @@ ul {
   nav ul {
     margin-left: 400px;
   }
+  .row .col-2{
+    margin-top: 40px;
+  }
   .col-2 h1 {
     font-size: 40px;
     line-height: 50px;
@@ -299,7 +302,7 @@ ul {
 /* ------===== all products page ===== ----- */
 .row-2 {
   justify-content: space-between;
-  margin: 100px auto 50px;
+  margin: 50px auto 50px;
 }
 select {
   border: 1px solid #ff523b;
