@@ -236,13 +236,8 @@ ul {
 @media only screen and (max-width: 800px) {
   nav ul {
     position: absolute;
-    top: 70px;
-    left: 0;
-    background: radial-gradient(#fff, #fc6a03);
-    width: 25%;
-    margin-top: 80px;
-    margin-left: 485px;
-    padding-left: 10px;
+    top: 140px;
+    right: 0;
     overflow: hidden;
     transition: max-height 0.5s;
   }
@@ -251,6 +246,12 @@ ul {
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  nav ul li a{
+    color: #000;
+  }
+  nav ul li a:hover{
+    color: #ff523b;
   }
   .menu-icon {
     display: block;
