@@ -80,7 +80,9 @@ a {
   background: #563434;
 }
 .header .row {
-  margin-top: 70px;
+  /* margin-top: 40px; */
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* ------ featured categories ----- */
