@@ -147,7 +147,7 @@ h4 {
 
 /* ------ testimonial ----- */
 .testimonial {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .testimonial .col-3 {
   text-align: center;
@@ -157,7 +157,8 @@ h4 {
   transition: transform 0.5s;
 }
 .testimonial .col-3 img {
-  width: 50px;
+  width: 70px;
+  height: 70px;
   margin-top: 20px;
   border-radius: 50%;
 }
