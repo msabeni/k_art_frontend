@@ -395,9 +395,9 @@ th:last-child {
 }
 
 /* ------===== Account page ===== ----- */
-.account-page {
-  padding: 50px 0;
-  background: radial-gradient(#fff,#ffd6d6);
+.account-color {
+  background: radial-gradient(#fff, #fc6a03);
+  padding-bottom: 50px;
 }
 .form-container {
   background: #fff;

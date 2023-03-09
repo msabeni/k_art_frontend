@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--==== Nav Bar Start ====-->
-    <div class="container">
+    <div class="container account-color">
       <div class="navbar">
         <div class="logo">
           <a href="index.html">
@@ -59,36 +59,35 @@
         />
       </div>
       <!-- ==== End navbar ==== -->
-    </div>
+      <!--==== Account Page Start ====-->
+      <div class="account-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="images/front_image1.jpg" alt="hero" width="100%">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                <div class="form-btn">
+                  <span onclick="login()">Login</span>
+                  <span onclick="register()"">Register</span>
+                  <hr id="Indicator">
+                </div>
 
-    <!--==== Account Page Start ====-->
-    <div class="account-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/account-hero.png" alt="hero" width="100%">
-          </div>
-          <div class="col-2">
-            <div class="form-container">
-              <div class="form-btn">
-                <span onclick="login()">Login</span>
-                <span onclick="register()"">Register</span>
-                <hr id="Indicator">
+                <form id="LoginForm">
+                  <input type="text" placeholder="Username">
+                  <input type="password" name="" id="" placeholder="password">
+                  <button type="submit" class="btn">Login</button>
+                  <a href="">Forgot password</a>
+                </form>
+                <form id="RegForm">
+                  <input type="text" placeholder="Username">
+                  <input type="email" placeholder="Email">
+                  <input type="password" name="" id="" placeholder="password">
+                  <button type="submit" class="btn">Register</button>
+                  
+                </form>
               </div>
-
-              <form id="LoginForm">
-                <input type="text" placeholder="Username">
-                <input type="password" name="" id="" placeholder="password">
-                <button type="submit" class="btn">Login</button>
-                <a href="">Forgot password</a>
-              </form>
-              <form id="RegForm">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" name="" id="" placeholder="password">
-                <button type="submit" class="btn">Register</button>
-                
-              </form>
             </div>
           </div>
         </div>
